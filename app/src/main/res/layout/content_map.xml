@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MapActivity"
+    tools:showIn="@layout/activity_map">
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        />
+
+    <com.skyfishjy.library.RippleBackground
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/ripple"
+        app:rb_color="#0099CC"
+        app:rb_radius="32dp"
+        app:rb_rippleAmount="4"
+        app:rb_duration="3000"
+        app:rb_scale="6">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/location"
+        android:translationY="-18dp"
+
+        />
+    </com.skyfishjy.library.RippleBackground>
+
+
+    <com.mancj.materialsearchbar.MaterialSearchBar
+        style="@style/MaterialSearchBarLight"
+        app:mt_speechMode="false"
+        app:mt_hint="Search a place"
+        app:mt_maxSuggestionsCount="10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/searchBar"
+        android:layout_margin="15dp"
+        app:mt_navIconEnabled="true"
+        app:mt_placeholder="Search a Place"
+        android:elevation="5dp"
+        android:outlineProvider="bounds"
+
+         />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Find Nearby Places"
+        android:id="@+id/btn_search"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="15dp"
+        android:textColor="#ffffff"
+        android:background="@drawable/bg_button"
+        android:textAllCaps="false"
+        />
+
+
+</RelativeLayout>

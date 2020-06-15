@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Demo">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sorry"
+        android:textSize="30dp"
+        android:layout_marginTop="70dp"
+        android:textAlignment="center"
+        android:textColor="#FF8C00"
+        android:id="@+id/txt1"
+        android:gravity="center_horizontal" />
+    <View
+        android:layout_width="75dp"
+        android:layout_height="2dp"
+        android:alpha="2"
+        android:layout_below="@+id/txt1"
+        android:layout_centerInParent="true"
+        android:background="@android:color/black"
+        />
+
+    <TextView
+        android:layout_width="220dp"
+        android:layout_height="200dp"
+        android:background="@drawable/gear"
+        android:layout_below="@+id/txt1"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="40dp"
+        android:id="@+id/header"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Under Construction"
+        android:fontFamily="Arial"
+        android:layout_below="@id/header"
+        android:textSize="25sp"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:id="@+id/txt"
+        android:gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Demo"
+        android:textSize="30dp"
+        android:layout_marginTop="70dp"
+        android:textAlignment="center"
+        android:textColor="#FF8C00"
+        android:id="@+id/tv"
+        android:layout_below="@id/txt"
+        android:gravity="center_horizontal" />
+
+</RelativeLayout>
