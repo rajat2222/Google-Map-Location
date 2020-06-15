@@ -100,7 +100,13 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
         mMapFragment.getMapAsync(this);
         mMapView = mMapFragment.getView();
         fusedLocationProviderClient = LocationServices.getFusedLocationProviderClient(MapActivity.this);
-        Places.initialize(MapActivity.this, "AIzaSyBoJTzlw5dRaLViaeT4mlPNT1cWbFDSZUE");
+        // due to privacy and Google Documentation i am removing my Google Api key
+        
+        //add your api key here
+       
+        Places.initialize(MapActivity.this, "Your Google API key");
+       
+        //when your Google Api key is Correct then your project will further execute
         placesClient = Places.createClient(this);
         final AutocompleteSessionToken token = AutocompleteSessionToken.newInstance();
 
